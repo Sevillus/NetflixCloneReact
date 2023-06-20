@@ -1,15 +1,14 @@
-
-import HomeSection from "./components/HomeSection";
-import TvSection from "./components/TvSection";
-import QA from "./components/QA";
+import {Routes, Route} from "react-router-dom"
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
     return(
-        <>
-            <HomeSection />
-            <TvSection />
-            <QA />
-        </>
+        <Routes>
+            <Route path="/" element={<HomePage />}/>
+            <Route path="/login" element={<LoginPage />}/>
+            <Route />
+        </Routes>
     )
 }
 

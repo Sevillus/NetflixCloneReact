@@ -1,13 +1,12 @@
 import Navbar from "./Navbar";
 import background from "../../public/imgs/backgroundImg.jpg"
 import {TextField, Button} from "@mui/material"
+import BackGround from "./BackGround";
+
 
 const HomeSection = () =>{
     return(
-        <section style={{
-            height: "98vh",
-            background: `linear-gradient(to top, rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%), url(${background}),center`
-        }}>
+        <BackGround>
             <Navbar />
             <div style={{
                 display:"flex",
@@ -61,10 +60,11 @@ const HomeSection = () =>{
                     </div>
                 </div>
             </div>
-        </section>
+        </BackGround>
 
 
 
-    )
+
+            )
 }
 export default HomeSection;
